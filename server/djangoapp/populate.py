@@ -9,7 +9,7 @@ def initiate():
         {"name": "Kia", "description": "Great cars. Korean technology"},
         {"name": "Toyota", "description": "Great cars. Japanese technology"},
     ]
-    car_make_instances = []     
+    car_make_instances = []
     for data in car_make_data:
         car_make_instances.append(
             CarMake.objects.create(
@@ -89,4 +89,4 @@ def initiate():
             year=data['year'],
             dealer_id=data['dealer_id']
         )
-
+        
